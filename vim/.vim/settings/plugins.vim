@@ -53,9 +53,9 @@ Plug 'scrooloose/nerdcommenter'         " Plugin allows to make comments
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " -- Themes --
-Plug 'itchyny/lightline.vim'           " A light and configurable statusline/tabline plugin for Vim
 Plug 'vim-airline/vim-airline'          " Cool Status Bar
 Plug 'vim-airline/vim-airline-themes'   " Addetional themes for vim-airline
+Plug 'itchyny/lightline.vim'           " A light and configurable statusline/tabline plugin for Vim
 Plug 'NLKNguyen/papercolor-theme'       " Cool Theme
 
 call plug#end()

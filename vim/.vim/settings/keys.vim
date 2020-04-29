@@ -5,6 +5,8 @@ nnoremap <C-t> :tabnew <CR>                  " Create a new tab
 
 
 " --- Plugins
+" Git
+nmap <leader>g :Gstatus <CR>
 
 " FZF
 map <leader><CR> :Files <CR>
