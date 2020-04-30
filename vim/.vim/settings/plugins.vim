@@ -35,8 +35,14 @@ Plug 'junegunn/fzf.vim', {
              \ 'Marks'
          \ ] }
 Plug 'majutsushi/tagbar'                " Plugin shows tag bar for quickly move around of file content
-Plug 'lvht/tagbar-markdown'             " Plugin allows work Tagbar with MarkDown format
 Plug 'scrooloose/nerdtree'              " Plugin shows panel with files
+
+" --- MarkDown
+Plug 'lvht/tagbar-markdown'             " Plugin allows work Tagbar with MarkDown format
+Plug 'suan/vim-instant-markdown'        " Plugin allows view render MarkDown and view in your browser
+
+" --- Dictionaries ---
+Plug 'voldikss/vim-translator'
 
 " --- VCS ---
 Plug 'xuyuanp/nerdtree-git-plugin'
@@ -72,3 +78,4 @@ source $HOME/.vim/settings/plugins/vim-surround.vim
 source $HOME/.vim/settings/plugins/tagbar.vim
 source $HOME/.vim/settings/plugins/vim-gitgutter.vim
 source $HOME/.vim/settings/plugins/nerdtree-git-plugin.vim
+source $HOME/.vim/settings/plugins/vim-translator.vim

@@ -1,12 +1,14 @@
-let g:mapleader = "\<Space>"                 " set leader key
-nnoremap U <C-r>                             " Use `u` to undo, use `U` to redo, mind = blown
-noremap <C-s> :update<cr>                    " Save write
-nnoremap <C-t> :tabnew <CR>                  " Create a new tab
-
+let g:mapleader = "\<Space>"                            " set leader key
+nnoremap U <C-r>                                        " Use `u` to undo, use `U` to redo, mind = blown
+noremap <C-s> :update<cr>                               " Save write
+nnoremap <C-t> :tabnew <CR>                             " Create a new tab
+map <leader>f "zyiw:exe "Rg ".@z.""<CR>                  " Search via Rg in project
+map <leader>F "zyiw:exe "Ag ".@z.""<CR>                  " Search via Ag in project
 
 " --- Plugins
 " Git
 nmap <leader>g :Gstatus <CR>
+
 
 " FZF
 map <leader><CR> :Files <CR>
@@ -24,6 +26,25 @@ nmap ÷ <plug>NERDCommenterInvert                       " ALt + / (OSX)
 xmap ÷ <plug>NERDCommenterInvert                       " ALt + / (OSX)
 nmap “ <plug>NERDCommenterInvert                       " Alt + ? (OSX Rus)
 xmap “ <plug>NERDCommenterInvert                       " Alt + ? (OSX Rus)
+
+" suan/vim-instant-markdown
+map <leader>M :InstantMarkdownStop<CR>                 " Stop Markdown server
+map <leader>m :InstantMarkdownPreview<CR>              " Stop Markdown server
+
+
+" --- Plug 'voldikss/vim-translator'
+" Display translation in a window
+nmap <silent> <Leader>w <Plug>TranslateW
+vmap <silent> <Leader>w <Plug>TranslateWV
+" nmap <silent> <Leader>t <Plug>Translate
+" vmap <silent> <Leader>t <Plug>TranslateV
+" Replace the text with translation
+" nmap <silent> <Leader>r <Plug>TranslateR
+" vmap <silent> <Leader>r <Plug>TranslateRV
+" Translate the text in clipboard
+" nmap <silent> <Leader>x <Plug>TranslateX
+
+
 
 
 " Disable Arrow keys!!!
