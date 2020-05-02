@@ -28,6 +28,24 @@ curl --compressed -o- -L https://yarnpkg.com/install.sh | bash
 brew install watchman
 ```
 
+#### Python
+For work with python project need to install following libraries:
+```
+pip install python-language-server pylint autopep8 rope jedi
+```
+As suggestion add this in to requirements/dev.txt
+```
+flake8=>3.7.7
+isort=>4.3.21
+pre-commit=>1.18.3
+python-language-server
+pylint
+autopep8
+rope
+jedi=>0.17.0
+```
+
+
 
 ### FZF and Search
 This plugin helps work with files, search, bufers and many more.

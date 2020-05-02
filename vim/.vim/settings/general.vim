@@ -55,6 +55,7 @@ if (has("termguicolors"))
   set termguicolors
 endif 
 colorscheme PaperColor                  " Set Theme
+" colorscheme gruvbox                     " Set Theme
 set background=dark                     " Tell vim what the background color looks like
 set number relativenumber               " Show line numbers.
 " set wrap linebreak nolist
@@ -92,3 +93,5 @@ set foldlevel=99
 " set path=$PWD/**                        " This is a list of directories which will be searched when using the vim
 
 "au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm alternatively you can run :source $MYVIMRC
+:setlocal spell spelllang=ru_yo,en_us
+set spell

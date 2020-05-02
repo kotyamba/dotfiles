@@ -54,6 +54,7 @@ Plug 'matze/vim-move'                   " Plugin helps move lines Up or Down
 Plug 'chun-yang/auto-pairs'             " Plugin allows to insert or delete brackets, parens, quotes in pair
 Plug 'tpope/vim-surround'               " Plugin allows change quotas from ' on \"
 Plug 'scrooloose/nerdcommenter'         " Plugin allows to make comments
+Plug 'terryma/vim-multiple-cursors'     " Plugin allows to use multiple cursor like in Sublime Text
 
 " --- Code ---
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -63,7 +64,7 @@ Plug 'vim-airline/vim-airline'          " Cool Status Bar
 Plug 'vim-airline/vim-airline-themes'   " Addetional themes for vim-airline
 Plug 'itchyny/lightline.vim'           " A light and configurable statusline/tabline plugin for Vim
 Plug 'NLKNguyen/papercolor-theme'       " Cool Theme
-
+Plug 'morhetz/gruvbox'                  " Cool Theme
 call plug#end()
 
 source $HOME/.vim/settings/plugins/vim-move.vim
@@ -79,3 +80,4 @@ source $HOME/.vim/settings/plugins/tagbar.vim
 source $HOME/.vim/settings/plugins/vim-gitgutter.vim
 source $HOME/.vim/settings/plugins/nerdtree-git-plugin.vim
 source $HOME/.vim/settings/plugins/vim-translator.vim
+source $HOME/.vim/settings/plugins/vim-multiple-cursors.vim

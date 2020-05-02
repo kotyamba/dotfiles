@@ -2,8 +2,15 @@ let g:mapleader = "\<Space>"                            " set leader key
 nnoremap U <C-r>                                        " Use `u` to undo, use `U` to redo, mind = blown
 noremap <C-s> :update<cr>                               " Save write
 nnoremap <C-t> :tabnew <CR>                             " Create a new tab
-map <leader>f "zyiw:exe "Rg ".@z.""<CR>                  " Search via Rg in project
-map <leader>F "zyiw:exe "Ag ".@z.""<CR>                  " Search via Ag in project
+map <leader>f "zyiw:exe "Rg ".@z.""<CR>                 " Search via Rg in project
+map <leader>F "zyiw:exe "Ag ".@z.""<CR>                 " Search via Ag in project
+map <leader>q :qa <CR>                                  " Exit from all buffers
+
+" Resize windows
+noremap <silent> <C-S-Left> :vertical resize +1<CR>
+noremap <silent> <C-S-Right> :vertical resize -1<CR>
+noremap <silent> <C-S-Up> :resize -1<CR>
+noremap <silent> <C-S-Down> :resize +1<CR>
 
 " --- Plugins
 " Git
