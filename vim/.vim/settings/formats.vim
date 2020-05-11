@@ -1,7 +1,5 @@
 " ---- Custom files format ----
 
-
-
 " Python format
 au BufNewFile,BufRead *.py
     \ set tabstop=4
@@ -13,12 +11,11 @@ au BufNewFile,BufRead *.py
     \ fileformat=unix
 
 
-
 " JavaScript format
-au BufNewFile,BufRead *.js, *.html, *.css
-    \ set tabstop=4
-    \ softtabstop=4
-    \ shiftwidth=4
+au BufNewFile,BufRead *.js,*.html,*.css
+    \ set tabstop=2 
+    \ softtabstop=2
+    \ shiftwidth=2 
 
 
 " MarkDown format

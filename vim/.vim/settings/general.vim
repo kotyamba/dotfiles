@@ -9,6 +9,7 @@ set showcmd                             " display uncompleted commands in the st
 " set shell=bash\ -i
 
 " Secure
+set noswapfile                          " This is option set to disable to swap file within vim
 set nobackup                            " This is recommended by coc
 set nowritebackup                       " This is recommended by coc
 set cryptmethod=blowfish2               " Set Crypt method
@@ -50,13 +51,7 @@ set shiftwidth=4                        " Change the number of space characters 
 set expandtab                           " Expand tabs to spaces
 set softtabstop=4                       " Number of spaces that a <Tab> counts for while performing editing operations, like inserting a <Tab> or using <BS>.
 
-" Visual and Themes
-if (has("termguicolors"))
-  set termguicolors
-endif 
-colorscheme PaperColor                  " Set Theme
-" colorscheme gruvbox                     " Set Theme
-set background=dark                     " Tell vim what the background color looks like
+
 set number relativenumber               " Show line numbers.
 " set wrap linebreak nolist
 set showtabline=2		            	" Always show tabs 
@@ -67,8 +62,15 @@ set visualbell                          " Use visual bell instead of audible bel
 if has('gui_macvim')                    " Set font for macvim
     set macligatures
 endif
-"set guifont=Fira\ Code:h18
-set guifont=JetBrains\ Mono:h17         " This is a list of fonts which will be used for the GUI version of Vim
+
+" Font
+" This is a list of fonts which will be used for the GUI version of Vim
+" Regular programers fonts
+" set guifont=Fira\ Code:h18              " https://github.com/tonsky/FiraCode
+" set guifont=JetBrains\ Mono:h17         " https://www.jetbrains.com/lp/mono/#how-to-install
+" NERD FONTS: https://github.com/ryanoasis/nerd-fonts#font-installation
+set guifont=JetBrainsMono\ Nerd\ Font:h17        " Cool font with icons
+
 set linespace=1                         " Number of pixel lines inserted between characters
 set cmdheight=2                         " More space for displaying messages
 set splitbelow                          " Horizontal splits will automatically be below

@@ -1,21 +1,23 @@
 let g:mapleader = "\<Space>"                            " set leader key
 nnoremap U <C-r>                                        " Use `u` to undo, use `U` to redo, mind = blown
-noremap <C-s> :update<cr>                               " Save write
+" nnoremap <leader>w :update <CR>                         " Save
 nnoremap <C-t> :tabnew <CR>                             " Create a new tab
 map <leader>f "zyiw:exe "Rg ".@z.""<CR>                 " Search via Rg in project
 map <leader>F "zyiw:exe "Ag ".@z.""<CR>                 " Search via Ag in project
 map <leader>q :qa <CR>                                  " Exit from all buffers
 
+map <silent> <S-Left> :tabprevious <CR>
+map <silent> <S-Right> :tabnext <CR>
+
 " Resize windows
 noremap <silent> <C-S-Left> :vertical resize +1<CR>
 noremap <silent> <C-S-Right> :vertical resize -1<CR>
-noremap <silent> <C-S-Up> :resize -1<CR>
-noremap <silent> <C-S-Down> :resize +1<CR>
+noremap <silent> <C-S-Down> :resize -1<CR>
+noremap <silent> <C-S-Up> :resize +1<CR>
 
 " --- Plugins
 " Git
 nmap <leader>g :Gstatus <CR>
-
 
 " FZF
 map <leader><CR> :Files <CR>
@@ -25,14 +27,16 @@ map \<CR> :Buffers <CR>
 nmap « :TagbarToggle<CR>
 
 " NERDTree
-nmap <leader>\ : NERDTreeToggle<CR>
-map <C-\> :NERDTreeToggle<CR>
+nmap <leader>\ : NERDTreeToggle<CR>                    " Open panel with files and derictories
+map <C-\> :NERDTreeFind<CR>                            " Find opended file file panel
 
 " NERDCommenter
-nmap ÷ <plug>NERDCommenterInvert                       " ALt + / (OSX)
-xmap ÷ <plug>NERDCommenterInvert                       " ALt + / (OSX)
-nmap “ <plug>NERDCommenterInvert                       " Alt + ? (OSX Rus)
-xmap “ <plug>NERDCommenterInvert                       " Alt + ? (OSX Rus)
+nmap <C-_> <plug>NERDCommenterInvert                       " ALt + / (OSX)
+xmap <C-_> <plug>NERDCommenterInvert                       " ALt + / (OSX)
+" nmap ÷ <plug>NERDCommenterInvert                       " ALt + / (OSX)
+" xmap ÷ <plug>NERDCommenterInvert                       " ALt + / (OSX)
+" nmap “ <plug>NERDCommenterInvert                       " Alt + ? (OSX Rus)
+" xmap “ <plug>NERDCommenterInvert                       " Alt + ? (OSX Rus)
 
 " suan/vim-instant-markdown
 map <leader>M :InstantMarkdownStop<CR>                 " Stop Markdown server
@@ -41,8 +45,8 @@ map <leader>m :InstantMarkdownPreview<CR>              " Stop Markdown server
 
 " --- Plug 'voldikss/vim-translator'
 " Display translation in a window
-nmap <silent> <Leader>w <Plug>TranslateW
-vmap <silent> <Leader>w <Plug>TranslateWV
+nmap <silent> <Leader>t <Plug>TranslateW
+vmap <silent> <Leader>t <Plug>TranslateWV
 " nmap <silent> <Leader>t <Plug>Translate
 " vmap <silent> <Leader>t <Plug>TranslateV
 " Replace the text with translation
