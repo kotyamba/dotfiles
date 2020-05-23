@@ -67,11 +67,9 @@ Plug 'kshenoy/vim-signature'            " Plugin to place, toggle and display ma
 Plug 'unblevable/quick-scope'           " Plugin make higlight chars for find key (F, f, T, t) 
 
 " --- Code ---
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'mattn/emmet-vim'                  " Plugin helps work with html tags. Look emmet in Yandex
 Plug 'ap/vim-css-color'                 " Plugin shows bg color for css color style
 Plug 'Yggdroot/indentLine'              " This plugin is used for displaying thin vertical lines at each indentation level for code indented with spaces.
-Plug 'kien/rainbow_parentheses.vim'     " A Vim plugin that uses color to help identify matching parentheses 
 Plug 'editorconfig/editorconfig-vim'    " This is an EditorConfig plugin for Vim.
 
 " --- GUI ---
