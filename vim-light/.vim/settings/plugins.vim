@@ -92,7 +92,6 @@ source $HOME/.vim/settings/plugins/vim-airline-themes.vim
 source $HOME/.vim/settings/plugins/lightline.vim
 source $HOME/.vim/settings/plugins/nerdcommenter.vim
 source $HOME/.vim/settings/plugins/fzf.vim
-source $HOME/.vim/settings/plugins/coc.vim
 source $HOME/.vim/settings/plugins/nerdtree.vim
 source $HOME/.vim/settings/plugins/vim-surround.vim
 source $HOME/.vim/settings/plugins/tagbar.vim
@@ -102,7 +101,6 @@ source $HOME/.vim/settings/plugins/vim-translator.vim
 source $HOME/.vim/settings/plugins/vim-multiple-cursors.vim
 source $HOME/.vim/settings/plugins/emmet-vim.vim
 source $HOME/.vim/settings/plugins/vim-instant-markdown.vim
-source $HOME/.vim/settings/plugins/rainbow_parentheses.vim
 source $HOME/.vim/settings/plugins/quick-scope.vim
 source $HOME/.vim/settings/plugins/indentline.vim
 " source $HOME/.vim/settings/plugins/vim-workspace.vim
